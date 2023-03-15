@@ -1,6 +1,5 @@
 ﻿@page "/hello"
-@typeparam T
-@inject CustomLogger<T> _customLogger
+@inject CustomLogger<string> _customLogger
 
 @code{
     protected override void OnInitialized()
