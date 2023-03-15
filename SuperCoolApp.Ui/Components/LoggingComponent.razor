@@ -1,0 +1,11 @@
+﻿@page "/hello"
+@typeparam T
+@inject CustomLogger<T> _customLogger
+
+@code{
+    protected override void OnInitialized()
+    {
+        base.OnInitialized();
+        _customLogger.Log();
+    }
+}
